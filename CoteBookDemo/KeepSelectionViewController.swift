@@ -28,6 +28,10 @@ class KeepSelectionViewController: UIViewController {
         for i in 0..<self.selection.count {
             self.myTableView.selectRow(at: IndexPath(row: self.selection[i], section: 0), animated: true, scrollPosition: .none)
         }
+        let alert = UIAlertController(title: "Hasha", message: "Table reload data already! But our selction is still ok. lol xD.", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "continue", style: .default, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
