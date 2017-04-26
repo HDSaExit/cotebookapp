@@ -42,6 +42,7 @@ class KeepSelectionViewController: UIViewController {
             self.myTableView.allowsMultipleSelectionDuringEditing = false
             self.myTableView.setEditing(false, animated: true)
             self.isEditing = false
+            self.selection.removeAll()
         }
     }
 }
